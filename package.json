@@ -1,0 +1,16 @@
+{
+  "name": "local-search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Vlad Khitev <vkhitev@gmail.com> (https://vk.com/id18315550)",
+  "license": "ISC",
+  "dependencies": {
+    "fastpriorityqueue": "^0.2.3",
+    "ramda": "^0.23.0"
+  }
+}
