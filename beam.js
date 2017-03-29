@@ -1,7 +1,7 @@
 const randomState = require('./random-state')
 const heuristic = require('./heuristic')
 
-const { clone } = require('ramda')
+const { clone, flatten } = require('ramda')
 const PriorityQueue = require('fastpriorityqueue')
 
 function PQ () {
@@ -10,12 +10,11 @@ function PQ () {
 
 function* generateNewStates (state, i, j) {
   const size = state.length
-  const cell = state[i][j]
   for (let p = 0; p < size; p++) {
     for (let q = 0; q < size; q++) {
       const newState = clone(state)
       const newCell = state[p][q]
-      if (newCell === cell) {
+      if (newCell !== '.') {
         continue
       }
       [newState[p][q], newState[i][j]] = [newState[i][j], newState[p][q]]
@@ -43,33 +42,31 @@ function populate (node) {
   return queue
 }
 
-function getRandomInt (min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min
-}
-
-function getBestK (k) {
-  return function (queue) {
-    const best = []
+function mergeK (k) {
+  return function merge (queue, currentQueue) {
     for (let i = 0; i < k; i++) {
-      best.push(queue.poll())
-      // Псевдорандом не катит
-      // best.push(queue.array[getRandomInt(0, queue.array.length - 1)])
+      queue.add(currentQueue.poll())
     }
-    return best
-  }
-}
-
-function mergeBestK (k) {
-  return function (queue, cur) {
-    cur.forEach(node => {
-      queue.add(node)
-    })
     return queue
   }
 }
 
-function hasFinal (pools) {
-  return pools[0].key === 0
+function getFinal (pools) {
+  const found = pools.filter(pool => pool.key === 0)
+  return found.value || null
+}
+
+function repr (state) {
+  return flatten(state).join('')
+}
+
+function pickFirst (k, queue) {
+  console.log(queue)
+  const array = []
+  for (let i = 0; i < k; i++) {
+    array.push(queue.poll())
+  }
+  return array
 }
 
 function beam (k) {
@@ -77,28 +74,35 @@ function beam (k) {
     key: 1000,
     value: randomState(8)
   }))
-  let stuck = {
-    key: 0,
-    times: 0
+  const s = new Set()
+  let steps = 0
+  let final = null
+  while (final === null) {
+    steps += 1
+    pools = pickFirst(k, pools.map(populate).reduce(mergeK(k), PQ()))
+
+    // console.log(pools)
+
+    final = getFinal(pools)
+
+    // if (s.has(repr(pools[0].value))) {
+    //   return {
+    //     solved: false,
+    //     steps: steps
+    //   }
+    // }
+    // s.add(repr(pools[0].value))
+    // pools.forEach(p => console.log(p))
+    console.log(pools.map(p => p.key))
+    console.log('---------------')
   }
-  while (!hasFinal(pools)) {
-    pools = pools
-      .map(populate)
-      .map(getBestK(k))
-      .reduce(mergeBestK(k), PQ())
-      .array.slice(0, k)
-    if ([1, 2].includes(pools[0].key)) {
-      stuck.times += 1
-    } else {
-      stuck.key = pools[0].key
-      stuck.times = 1
-    }
-    if (stuck.times === 15) {
-      return 'Stuck in local pit'
-    }
-    console.log(pools[0])
+  return {
+    solved: true,
+    value: getFinal(pools),
+    steps: steps
   }
-  return pools[0].value
 }
 
-console.log(beam(50))
+module.exports = beam
+
+beam(20)

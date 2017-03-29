@@ -1,0 +1,105 @@
+{
+  "beams": 6,
+  "result": [
+    {
+      "solved": false,
+      "steps": 8,
+      "duration": 3.187
+    },
+    {
+      "solved": false,
+      "steps": 10,
+      "duration": 4.007
+    },
+    {
+      "solved": false,
+      "steps": 9,
+      "duration": 3.568
+    },
+    {
+      "solved": false,
+      "steps": 8,
+      "duration": 3.095
+    },
+    {
+      "solved": false,
+      "steps": 6,
+      "duration": 2.35
+    },
+    {
+      "solved": false,
+      "steps": 5,
+      "duration": 1.964
+    },
+    {
+      "solved": false,
+      "steps": 8,
+      "duration": 3.101
+    },
+    {
+      "solved": false,
+      "steps": 8,
+      "duration": 3.108
+    },
+    {
+      "solved": false,
+      "steps": 9,
+      "duration": 3.49
+    },
+    {
+      "solved": false,
+      "steps": 8,
+      "duration": 3.115
+    },
+    {
+      "solved": false,
+      "steps": 7,
+      "duration": 2.754
+    },
+    {
+      "solved": false,
+      "steps": 8,
+      "duration": 3.15
+    },
+    {
+      "solved": false,
+      "steps": 10,
+      "duration": 4.12
+    },
+    {
+      "solved": false,
+      "steps": 8,
+      "duration": 3.728
+    },
+    {
+      "solved": false,
+      "steps": 6,
+      "duration": 3.03
+    },
+    {
+      "solved": false,
+      "steps": 10,
+      "duration": 4.197
+    },
+    {
+      "solved": false,
+      "steps": 8,
+      "duration": 2.999
+    },
+    {
+      "solved": false,
+      "steps": 7,
+      "duration": 3
+    },
+    {
+      "solved": false,
+      "steps": 9,
+      "duration": 4.112
+    },
+    {
+      "solved": false,
+      "steps": 10,
+      "duration": 4.256
+    }
+  ]
+}

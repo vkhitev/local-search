@@ -27,3 +27,19 @@ function buildSummary (reports) {
 // console.log(buildSummary(reports))
 
 // fs.writeFileSync('./summary.md', buildSummary(reports))
+
+const beam = require('./beam')
+
+for (let k = config.algorithm.mink; k <= config.algorithm.maxk; k++) {
+  const summary = {
+    beams: k,
+    result: []
+  }
+  for (let i = 0; i < 20; i++) {
+    const start = new Date()
+    const solution = beam(k)
+    const duration = (new Date() - start) / 1000
+    summary.result.push(Object.assign({}, solution, { duration }))
+  }
+  fs.writeFileSync(`./reports/report-${k}.json`, JSON.stringify(summary, null, 2))
+}

@@ -1,0 +1,105 @@
+{
+  "beams": 3,
+  "result": [
+    {
+      "solved": false,
+      "steps": 10,
+      "duration": 1.867
+    },
+    {
+      "solved": false,
+      "steps": 6,
+      "duration": 1.121
+    },
+    {
+      "solved": false,
+      "steps": 6,
+      "duration": 1.116
+    },
+    {
+      "solved": false,
+      "steps": 9,
+      "duration": 1.696
+    },
+    {
+      "solved": false,
+      "steps": 7,
+      "duration": 1.267
+    },
+    {
+      "solved": false,
+      "steps": 7,
+      "duration": 1.304
+    },
+    {
+      "solved": false,
+      "steps": 7,
+      "duration": 1.34
+    },
+    {
+      "solved": false,
+      "steps": 9,
+      "duration": 1.989
+    },
+    {
+      "solved": false,
+      "steps": 9,
+      "duration": 1.683
+    },
+    {
+      "solved": false,
+      "steps": 10,
+      "duration": 1.847
+    },
+    {
+      "solved": false,
+      "steps": 8,
+      "duration": 1.528
+    },
+    {
+      "solved": false,
+      "steps": 10,
+      "duration": 1.848
+    },
+    {
+      "solved": false,
+      "steps": 7,
+      "duration": 1.288
+    },
+    {
+      "solved": false,
+      "steps": 7,
+      "duration": 1.34
+    },
+    {
+      "solved": false,
+      "steps": 9,
+      "duration": 1.737
+    },
+    {
+      "solved": false,
+      "steps": 8,
+      "duration": 2.066
+    },
+    {
+      "solved": false,
+      "steps": 6,
+      "duration": 1.466
+    },
+    {
+      "solved": false,
+      "steps": 8,
+      "duration": 1.898
+    },
+    {
+      "solved": false,
+      "steps": 10,
+      "duration": 1.862
+    },
+    {
+      "solved": false,
+      "steps": 7,
+      "duration": 1.323
+    }
+  ]
+}

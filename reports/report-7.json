@@ -1,0 +1,187 @@
+{
+  "beams": 7,
+  "result": [
+    {
+      "solved": false,
+      "steps": 10,
+      "duration": 6.145
+    },
+    {
+      "solved": false,
+      "steps": 8,
+      "duration": 4.138
+    },
+    {
+      "solved": false,
+      "steps": 10,
+      "duration": 4.702
+    },
+    {
+      "solved": false,
+      "steps": 8,
+      "duration": 3.915
+    },
+    {
+      "solved": false,
+      "steps": 7,
+      "duration": 3.198
+    },
+    {
+      "solved": false,
+      "steps": 7,
+      "duration": 3.201
+    },
+    {
+      "solved": false,
+      "steps": 8,
+      "duration": 3.71
+    },
+    {
+      "solved": false,
+      "steps": 9,
+      "duration": 4.2
+    },
+    {
+      "solved": true,
+      "value": [
+        [
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          "n",
+          "n",
+          "."
+        ],
+        [
+          "q",
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          ".",
+          ".",
+          "q",
+          ".",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          "n",
+          "n"
+        ],
+        [
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          "n",
+          "."
+        ],
+        [
+          ".",
+          ".",
+          ".",
+          "q",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          ".",
+          "q",
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          ".",
+          ".",
+          ".",
+          ".",
+          "q",
+          ".",
+          ".",
+          "."
+        ]
+      ],
+      "steps": 6,
+      "duration": 2.726
+    },
+    {
+      "solved": false,
+      "steps": 6,
+      "duration": 2.703
+    },
+    {
+      "solved": false,
+      "steps": 7,
+      "duration": 3.191
+    },
+    {
+      "solved": false,
+      "steps": 8,
+      "duration": 3.589
+    },
+    {
+      "solved": false,
+      "steps": 8,
+      "duration": 3.859
+    },
+    {
+      "solved": false,
+      "steps": 7,
+      "duration": 3.673
+    },
+    {
+      "solved": false,
+      "steps": 7,
+      "duration": 3.401
+    },
+    {
+      "solved": false,
+      "steps": 7,
+      "duration": 3.46
+    },
+    {
+      "solved": false,
+      "steps": 9,
+      "duration": 4.641
+    },
+    {
+      "solved": false,
+      "steps": 6,
+      "duration": 2.482
+    },
+    {
+      "solved": false,
+      "steps": 8,
+      "duration": 3.284
+    },
+    {
+      "solved": false,
+      "steps": 8,
+      "duration": 3.46
+    }
+  ]
+}

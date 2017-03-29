@@ -1,0 +1,187 @@
+{
+  "beams": 4,
+  "result": [
+    {
+      "solved": false,
+      "steps": 8,
+      "duration": 1.936
+    },
+    {
+      "solved": false,
+      "steps": 8,
+      "duration": 2.211
+    },
+    {
+      "solved": false,
+      "steps": 6,
+      "duration": 1.624
+    },
+    {
+      "solved": false,
+      "steps": 9,
+      "duration": 2.614
+    },
+    {
+      "solved": false,
+      "steps": 11,
+      "duration": 2.922
+    },
+    {
+      "solved": false,
+      "steps": 9,
+      "duration": 2.261
+    },
+    {
+      "solved": false,
+      "steps": 8,
+      "duration": 1.97
+    },
+    {
+      "solved": false,
+      "steps": 8,
+      "duration": 1.949
+    },
+    {
+      "solved": false,
+      "steps": 7,
+      "duration": 1.737
+    },
+    {
+      "solved": false,
+      "steps": 7,
+      "duration": 1.708
+    },
+    {
+      "solved": false,
+      "steps": 6,
+      "duration": 1.523
+    },
+    {
+      "solved": false,
+      "steps": 8,
+      "duration": 2.024
+    },
+    {
+      "solved": false,
+      "steps": 6,
+      "duration": 1.449
+    },
+    {
+      "solved": false,
+      "steps": 8,
+      "duration": 1.985
+    },
+    {
+      "solved": false,
+      "steps": 10,
+      "duration": 2.513
+    },
+    {
+      "solved": false,
+      "steps": 10,
+      "duration": 2.512
+    },
+    {
+      "solved": false,
+      "steps": 10,
+      "duration": 2.495
+    },
+    {
+      "solved": false,
+      "steps": 6,
+      "duration": 1.483
+    },
+    {
+      "solved": true,
+      "value": [
+        [
+          ".",
+          ".",
+          ".",
+          "n",
+          "n",
+          ".",
+          ".",
+          "n"
+        ],
+        [
+          ".",
+          ".",
+          ".",
+          ".",
+          "n",
+          ".",
+          ".",
+          "n"
+        ],
+        [
+          "q",
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          "q",
+          "."
+        ],
+        [
+          ".",
+          "q",
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          "q",
+          ".",
+          "."
+        ],
+        [
+          ".",
+          ".",
+          "q",
+          ".",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      ],
+      "steps": 8,
+      "duration": 1.959
+    },
+    {
+      "solved": false,
+      "steps": 7,
+      "duration": 1.727
+    }
+  ]
+}
